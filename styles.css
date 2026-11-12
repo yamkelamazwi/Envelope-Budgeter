@@ -16,7 +16,6 @@
   --shadow: rgba(31, 41, 55, 0.08);
 }
 
-/* Base */
 * {
   box-sizing: border-box;
 }
@@ -36,11 +35,19 @@ main {
 }
 
 h1 {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   text-align: center;
   font-size: clamp(2rem, 4vw, 2.75rem);
   color: var(--accent-dark);
   letter-spacing: -0.03em;
+}
+
+.byline {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-weight: 600;
 }
 
 .container {
@@ -51,7 +58,6 @@ h1 {
   box-shadow: 0 12px 30px var(--shadow);
 }
 
-/* Form structure */
 form {
   display: flex;
   flex-direction: column;
@@ -85,7 +91,6 @@ legend {
   margin-top: 8px;
 }
 
-/* Inputs */
 input,
 select,
 button {
@@ -125,7 +130,6 @@ button:active {
   transform: translateY(0);
 }
 
-/* Special button states */
 #clear {
   background: var(--panel-alt);
   color: var(--ink);
@@ -174,7 +178,6 @@ button:active {
   display: none;
 }
 
-/* Desktop */
 @media (min-width: 768px) {
   body {
     padding: 40px 24px 60px;
